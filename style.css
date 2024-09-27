@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/*O import tem que vir antes do font-face*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+
+@font-face {
+    font-family: 'Storia';
+    src: url('fonts/Storia-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+:root {
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Storia', cursive;
+    --fonte3: 'Fira Sans', cursive;
+    --cor1:#0D2E47;
+    --cor2:#64A1D0;
+    --cor3:#2480C7;
+    --cor4:#223747;
+    --cor5:#1B5F94;
+}
+
+
+body{
+    background-color: var(--cor1);
+    margin: 0px;
+    min-height: 100vh;
+}
+
+nav{
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+    background-color: var(--cor4);
+
+}
+
+nav > a{
+    margin: 60px;
+    color: var(--cor2);
+    text-decoration: none;
+
+}
+
+nav > a:hover{
+    background-color: #1B5F94;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+div#header{
+    height: 200px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor5), var(--cor4));
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486);
+
+}
+
+h1{
+    background-color: rgba(201, 226, 248, 0.164);
+    text-align: center;
+    font-family: var(--fonte2);
+    font-size: 5em;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    color: #f2f5f7;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px black;
+}
+
+article{
+    display: block;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -1px 3px 9px 4px rgba(0, 0, 0, 0.685);
+    
+}
+
+
+section#back-1{
+    background-image: url(imagens/foto01-g.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#back-2{
+    background-image: url(imagens/foto03-g.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.text-img{
+    font-family: var(--fonte1);
+    padding: 30px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+
+section.text-img > p{
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 5px;
+    display: inline-block;
+    color:  white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+}
+
+section.text-img#back-2 > p{
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 5px;
+    display: inline-block;
+    color:  rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.548);
+    border-radius: 5px;
+}
+
+
+section.text-img#back-1 > p > a{
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+
+main img{
+    display: block;
+    margin: auto;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.466);
+
+
+}
+
+h2{
+    padding: 30px 0px 0px 40px;
+    font-family: var(--fonte3);
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.subtitulo{
+    padding-top: 20px;
+}
+
+.prfo{
+    font-family: var(--fonte1);
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    text-indent: 20px;
+
+}
+
+#cont{
+    font-family: var(--fonte1);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-top: 30px;
+    padding-left: 45px;
+    font-weight: bold;
+}
+
+#cont > a {
+    text-decoration: none;
+    color: #06141f;
+}
+
+#cont > a:hover {
+    background-color: var(--cor2);
+    padding: 4px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+footer > p{
+    font-family: var(--fonte1);
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 5px;
+}
